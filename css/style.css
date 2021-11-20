@@ -194,13 +194,13 @@ p {
   border-radius: 0.25rem;
 }
 .portfolio__card__blogr {
-  background-image: url("/assets/blogr.png");
+  background-image: url("../assets/blogr.png");
 }
 .portfolio__card__portfolio {
-  background-image: url("/assets/portafolio.png");
+  background-image: url("../assets/portafolio.png");
 }
 .portfolio__card__crud {
-  background-image: url("/assets/crudTask.png");
+  background-image: url("../assets/crudTask.png");
 }
 
 .card {
