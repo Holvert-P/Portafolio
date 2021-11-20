@@ -1,0 +1,362 @@
+/* -------------Custom Properties-------------------- */
+:root {
+  --white-color: #fff;
+  --black-color: #0d0d0d;
+  --yellow-color: #f2d230;
+  --dark-yellow-color: #f2c335;
+  --violet-color: #a7abf2;
+  --light-blue-color: #91f2e9;
+
+  --font: "Poppins", sans-serif;
+}
+
+/* --------------Reset-------------------------------- */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color: var(--black-color);
+}
+body {
+  overflow-x: hidden;
+  /* background-color: var(--black-color); */
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.85rem;
+}
+h6 {
+  font-size: 0.7rem;
+}
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  color: inherit;
+  opacity: 1;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.5;
+}
+/* --------------Components--------------------------- */
+
+/* --------------Utilities---------------------------- */
+
+.box-shadow {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0 0, 0, 0.25);
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  padding: 0.5rem 1rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav__button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  right: 0.5rem;
+  z-index: 999;
+}
+.nav__menu {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  height: 100vh;
+  font-size: 1.5rem;
+  background-color: var(--black-color);
+  padding: 2rem 2rem 2rem 1rem;
+  animation: closeBar 1s ease-in-out;
+}
+.nav__menu--show {
+  right: 0;
+  animation: openBar 1s ease-in-out;
+}
+.menu {
+  padding: 0;
+}
+.item__menu {
+  list-style: none;
+  margin: 1rem;
+}
+.home {
+  background-image: url(../assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.home__info {
+  padding-top: 10em;
+  padding-left: 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+}
+
+.info__button {
+  margin-top: 8rem;
+}
+.button__contact {
+  background-color: var(--violet-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.about,
+.contact,
+.portfolio,
+.services {
+  padding: 1rem;
+  position: relative;
+}
+.title {
+  display: inline;
+  background-color: var(--yellow-color);
+  padding: 0 0.45rem;
+}
+.about__info {
+  margin-top: 1em;
+}
+
+.abilities__card {
+  padding-left: 4rem;
+  margin: 2rem 0;
+  position: relative;
+}
+.card__title {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card__img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #a39f9f;
+  padding: 0.25rem;
+  object-fit: contain;
+  position: absolute;
+  left: -0.3rem;
+  top: -1rem;
+}
+.card__info {
+  margin-left: 1rem;
+}
+
+.portfolio__card__blogr,
+.portfolio__card__portfolio,
+.portfolio__card__crud {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+.portfolio__card__blogr {
+  background-image: url("/assets/blogr.png");
+}
+.portfolio__card__portfolio {
+  background-image: url("/assets/portafolio.png");
+}
+.portfolio__card__crud {
+  background-image: url("/assets/crudTask.png");
+}
+
+.card {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  height: 20rem;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.portfolio__card__crud::before,
+.portfolio__card__blogr::before,
+.portfolio__card__portfolio::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.card__title__portfolio {
+  transform: translateY(15rem);
+  margin-top: 1rem;
+  transition: transform 1s;
+  transition: transform 1s;
+}
+.card:hover > h4,
+.card:hover > .card__body {
+  transform: translateY(0);
+  animation: moveTitle 1s ease-in-out;
+  animation: createCard 1s ease-in-out;
+}
+.card__title__portfolio::before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--yellow-color);
+  transition: width 1s;
+}
+.card:hover > .card__title__portfolio::before {
+  width: 100%;
+  animation: createLine 1s ease-in-out alternate;
+}
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card__body {
+  transform: translateY(22rem);
+  transition: transform 1s;
+}
+
+.card__info--portfolio {
+  margin: 1rem;
+}
+.card__tecno {
+  display: flex;
+  justify-content: center;
+}
+
+.card__tecno img {
+  width: 2.5rem;
+  margin: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.card__button {
+  padding: 0.25rem 1rem;
+  background-color: var(--violet-color);
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 550px) {
+  .nav,
+  .home__info,
+  .about,
+  .services,
+  .portfolio,
+  .contact,
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .nav__button {
+    display: none;
+  }
+  .nav__menu {
+    display: block;
+    position: relative;
+    height: auto;
+    padding: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .item__menu {
+    margin: 0.25rem 1rem;
+  }
+}
+/* --------------KeyFrames-------------------------- */
+@keyframes openBar {
+  from {
+    opacity: 0;
+    right: -250px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes closeBar {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: -250px;
+  }
+}
+
+@keyframes createLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes createCard {
+  0% {
+    transform: translateY(24rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveTitle {
+  0% {
+    transform: translateY(15rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
