@@ -415,7 +415,7 @@ p {
 
 @keyframes createCard {
   0% {
-    transform: translateY(24rem);
+    transform: translateY(15rem);
   }
   100% {
     transform: translateY(0);
