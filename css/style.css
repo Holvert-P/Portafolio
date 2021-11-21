@@ -382,8 +382,34 @@ p {
   .item__menu {
     margin: 0.25rem 1rem;
   }
+  .container__portfolio,
+  .container__abilities,
+  .services,
+  .contact,
+  .portfolio,
+  .home,
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .abilities__card {
+    max-width: 20rem;
+  }
   .container__contact {
     display: flex;
+  }
+  .form__contact {
+    width: 70rem;
+    padding-top: 0;
+  }
+  .form__social img {
+    width: 4rem;
+  }
+  .footer {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 }
 /* --------------KeyFrames-------------------------- */
