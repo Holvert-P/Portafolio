@@ -330,6 +330,9 @@ p {
 .socialMedia__img {
   margin-bottom: 1rem;
 }
+.form__contact {
+  padding-bottom: 0;
+}
 .form__contact p {
   margin: 1rem 0;
 }
@@ -338,8 +341,7 @@ p {
   gap: 1rem;
 }
 .form__social {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 1rem 0;
 }
 .form__social a {
   margin: 0.25rem 0.5rem;
@@ -379,6 +381,9 @@ p {
   }
   .item__menu {
     margin: 0.25rem 1rem;
+  }
+  .container__contact {
+    display: flex;
   }
 }
 /* --------------KeyFrames-------------------------- */
