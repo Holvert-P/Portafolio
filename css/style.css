@@ -342,10 +342,7 @@ p {
   padding-bottom: 0;
 }
 .form__social a {
-  margin: 0;
-}
-.form__social a img {
-  width: 3rem;
+  margin: 0.25rem 0.5rem;
 }
 
 .footer {
