@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,13 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
+  <script src="https://kit.fontawesome.com/b69d3fa8e3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <nav class="nav">
     <div class="logo">
-      <a href="index.html">HPT</a>
+      <a href="index.html">H'Devs</a>
     </div>
     <button id="nav-button" class="nav__button">
       <svg width="44" height="44" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +128,7 @@
         <h4 class="card__title card__title__portfolio">Blogr</h4>
         <div class="card__body">
           <p class="card__info card__info--portfolio">
-           Página Web Blogr landing page creada con HTML y CSS
+            Blogr landing page creada con HTML y CSS
           <div class="card__tecno">
             <img src="./assets/html.svg" alt="html">
             <img src="./assets/css.svg" alt="css">
@@ -156,23 +158,60 @@
         <h4 class="card__title card__title__portfolio">CRUD Task</h4>
         <div class="card__body">
           <p class="card__info card__info--portfolio">
-            Página Web CRUD Task creado con HTML, CSS y php.
+            CRUD Task creado con HTML, CSS y php.
           </p>
           <div class="card__tecno">
             <img src="./assets/html.svg" alt="html">
             <img src="./assets/css.svg" alt="css">
             <img src="./assets/javascript.svg" alt="javascript">
           </div>
-          <a href="https://crudtaskbyhdev.000webhostapp.com/" target="_blank" class="card__button">Ver demo</a>
+          <a href="https://holvert-p.github.io/Portafolio/" target="_blank" class="card__button">Ver demo</a>
         </div>
       </div>
     </article>
   </section>
   <section id="contacto" class="contact">
     <h2 class="title">Contacto</h2>
+    <article class="form__message">
+      <h2 class="message__title">Hablemos</h2>
+      <p class="message__description">
+        Para solicitar una cotización o si desea quedar para tomar un café, contáctese
+        directamente conmigo o complete el formulario y me comunicaré con usted a la brevedad.
+      </p>
+      <label for="name">Nombre</label>
+      <input type="text" name="name" class="message__input" id="name" required>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" class="message__input" required>
+      <label for="message__text">Mensaje</label>
+      <textarea name="message" id="message__text" rows="5" class="message__input"></textarea>
+      <input type="submit" value="Enviar Mensaje" class="message__button">
+    </article>
+    <article class="form__contact">
+      <img src="./assets/email.svg" alt="send email" class="socialMedia__img">
+      <p><i class="fas fa-map-marker-alt"></i> <span>Vivero Rosalinda 300m oeste Estelí, Nicaragua</span>
+      </p>
+      <p><i class="fas fa-phone-alt"></i> <span>(+505) 5744 7776</span>
+      </p>
+      <p><i class="fas fa-envelope"></i> <span>perezholvert@gmail.com</span>
+      </p>
+    </article>
+    <article class="form__social">
+      <a id="fb" href="https://www.facebook.com/holvert.perez.1" target="_blank">
+        <img src="./assets/fb.svg" alt="Facebook">
+      </a>
+      <a id="ig" href="https://www.instagram.com/holvertp/?hl=es" target="_blank">
+        <img src="./assets/ig.png" alt="Instagram">
+      </a>
+      <a id="li" href="https://www.linkedin.com/in/holvert-p%C3%A9rez-043088211/" target="_blank">
+        <img src="./assets/linkedin.svg" alt="Facebook">
+      </a>
+      <a id="wp" href="https://api.whatsapp.com/send?phone=50557447776&text=Hola" target="_blank">
+        <img src="./assets/wp.svg" alt="Facebook">
+      </a>
+    </article>
   </section>
   <footer class="footer">
-    <span>Sitio diseñado por Holvert Pérez Talavera</span>
+    <span>designed by Holvert Pérez</span>
   </footer>
 
 

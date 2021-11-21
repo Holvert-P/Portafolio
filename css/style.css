@@ -6,7 +6,8 @@
   --dark-yellow-color: #f2c335;
   --violet-color: #a7abf2;
   --light-blue-color: #91f2e9;
-
+  --grey--color: #d4dbe6;
+  --dark-grey-color: #a3a3aa;
   --font: "Poppins", sans-serif;
 }
 
@@ -282,6 +283,74 @@ p {
   border-radius: 0.5rem;
 }
 
+.message__title {
+  color: var(--violet-color);
+}
+.message__description {
+  padding: 1rem 0;
+}
+.form__message,
+.form__contact,
+.form__social {
+  color: var(--grey--color);
+  padding: 2rem;
+}
+.form__message label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--violet-color);
+}
+.message__input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f4f5fc;
+  border-radius: 1rem;
+  margin: 0.25rem 0;
+  width: 100%;
+  color: var(--dark-grey-color);
+  resize: none;
+  outline: none;
+}
+.message__button {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--violet-color);
+  color: var(--white-color);
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: 0rem 0.25rem 1rem rgba(167, 171, 242, 1);
+}
+.form__social {
+  text-align: center;
+}
+.form__social img {
+  width: 2rem;
+}
+.socialMedia__img {
+  margin-bottom: 1rem;
+}
+.form__contact p {
+  margin: 1rem 0;
+}
+.form__contact > p {
+  display: flex;
+  gap: 1rem;
+}
+.form__social {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.form__social a {
+  margin: 0.25rem 0.5rem;
+}
+.footer {
+  text-align: center;
+  padding: 0 2rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 0.75rem;
+}
 @media screen and (min-width: 550px) {
   .nav,
   .home__info,
