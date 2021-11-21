@@ -292,7 +292,7 @@ p {
 .form__message,
 .form__contact,
 .form__social {
-  color: var(--grey--color);
+  color: var(--black-color);
   padding: 2rem;
 }
 .form__message label {
