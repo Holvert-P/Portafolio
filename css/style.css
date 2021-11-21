@@ -68,8 +68,9 @@ p {
 
 /* --------------Utilities---------------------------- */
 
-.box-shadow {
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0 0, 0, 0.25);
+.info__subtitle,
+.info__welcome {
+  color: var(--violet-color);
 }
 
 .nav {
@@ -167,6 +168,7 @@ p {
   position: relative;
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--violet-color);
 }
 .card__img {
   width: 4rem;
@@ -354,6 +356,7 @@ p {
   color: var(--white-color);
   font-size: 0.75rem;
 }
+
 @media screen and (min-width: 550px) {
   .nav,
   .home__info,
@@ -373,6 +376,7 @@ p {
     position: relative;
     height: auto;
     padding: 0;
+    margin-left: 2.5rem;
   }
 
   .menu {
@@ -381,6 +385,21 @@ p {
   }
   .item__menu {
     margin: 0.25rem 1rem;
+  }
+  .info__title {
+    font-size: 5rem;
+  }
+  .info__subtitle,
+  .info__welcome {
+    font-size: 2rem;
+  }
+  .button__contact {
+    padding: 0.55rem 2.5rem;
+    font-size: 1.5rem;
+  }
+  .about__info {
+    padding: 0 7rem;
+    text-align: center;
   }
   .container__portfolio,
   .container__abilities,
@@ -397,19 +416,27 @@ p {
   .abilities__card {
     max-width: 20rem;
   }
+
   .container__contact {
     display: flex;
+    width: 100%;
+    padding: 0 5rem;
   }
   .form__contact {
     width: 70rem;
     padding-top: 0;
   }
   .form__social img {
-    width: 4rem;
+    width: 3rem;
   }
   .footer {
     padding: 0.5rem;
     font-size: 1rem;
+  }
+  .portfolio__card__blogr,
+  .portfolio__card__crud,
+  .portfolio__card__portfolio {
+    max-width: 25%;
   }
 }
 /* --------------KeyFrames-------------------------- */
