@@ -4,3 +4,11 @@
     right: -9rem;
   }
 }
+.rigth {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 6rem;
+  top: 1rem;
+  font-size: 0.85rem;
+}
