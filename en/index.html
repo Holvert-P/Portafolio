@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b69d3fa8e3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <title>H'Devs || Portfolio</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <a href="index.html">H'Devs</a>
+    </div>
+    <button id="nav-button" class="nav__button">
+      <svg width="44" height="44" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3 5C3 4.44772 3.44772 4 4 4H16C16.5523 4 17 4.44772 17 5C17 5.55228 16.5523 6 16 6H4C3.44772 6 3 5.55228 3 5Z"
+          fill="#fff" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3 10C3 9.44772 3.44772 9 4 9H10C10.5523 9 11 9.44772 11 10C11 10.5523 10.5523 11 10 11H4C3.44772 11 3 10.5523 3 10Z"
+          fill="#fff" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3 15C3 14.4477 3.44772 14 4 14H16C16.5523 14 17 14.4477 17 15C17 15.5523 16.5523 16 16 16H4C3.44772 16 3 15.5523 3 15Z"
+          fill="#fff" />
+      </svg>
+    </button>
+    <div class="nav__menu">
+      <ul class="menu">
+        <li class="item__menu"> <a href="#inicio">Home</a> </li>
+        <li class="item__menu"><a href="#acerca">About me</a></li>
+        <li class="item__menu"><a href="#servicios">Skills</a></li>
+        <li class="item__menu"><a href="#portafolio">Portfolio</a></li>
+        <li class="item__menu"><a href="#contacto">Contact</a></li>
+      </ul>
+      <div class="rigth">
+        <span id="es">SPA</span>
+        <input type="checkbox" id="check" checked>
+        <span id="en">ENG</span>
+      </div>
+    </div>
+
+  </nav>
+  <header class="home" id="inicio">
+    <div class="home__info">
+      <p class="info__welcome">Hi, I´m</p>
+      <h1 class="info__title">Holvert Pérez</h1>
+      <h4 class="info__subtitle">Front-end Developer</h4>
+      <div class="info__button">
+        <a href="#contacto" class="button__contact">Contact me</a>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="acerca" class="about">
+    <h2 class="title">About me</h2>
+    <p class="about__info">
+      My name is Holvert Pérez I currently reside in Estelí-Nicaragua, graduated from the systems engineering career
+      of information in the National University of Engineering.
+      I like to be self-taught, passionate about web development, open to learning new technologies.
+    </p>
+  </section>
+  <section id="servicios" class="services">
+    <h2 class="title">Skills</h2>
+    <div class="container__abilities">
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/html.svg" alt="html">
+        <h3 class="card__title">Hyper Text Markup Language (HTML)</h3>
+        <p class="card__info">
+          TI have 1 year of experience using HTML.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/css.svg" alt="css">
+        <h3 class="card__title">Cascading Style Sheets (CSS)</h3>
+        <p class="card__info">
+          I have 1 year of experience using CSS with the BEM CSS naming methodology.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/javascript.svg" alt="javascript">
+        <h3 class="card__title">JavaScript (JS)</h3>
+        <p class="card__info">
+          I have 6 months of experience using JavaScript for DOM manipulation and API connections.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/react.svg" alt="react js">
+        <h3 class="card__title">React JS</h3>
+        <p class="card__info">
+          I currently have a month learning React JS, getting the basics of this library of
+          JavaScript.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/laravel.svg" alt="laravel">
+        <h3 class="card__title">Laravel</h3>
+        <p class="card__info">
+          I used Laravel to create a university project which lasted 3 months where I could apply the
+          MVC methodology (model-view-controller), in this project I also learned a little about Laravel Jetstreem.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/php.svg" alt="php">
+        <h3 class="card__title">PHP</h3>
+        <p class="card__info">
+          Like Laravel I have 3 months of experience using PHP for database connections with MySQL.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/mysql.svg" alt="mysql">
+        <h3 class="card__title">MySQL</h3>
+        <p class="card__info">
+          Using MySQL I have been with stored functions for about 2 years.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section id="portafolio" class="portfolio">
+    <h2 class="title">Portfolio</h2>
+    <div class="container__portfolio">
+      <article class="portfolio__card__blogr">
+        <div class="card">
+          <h4 class="card__title card__title__portfolio">Blogr</h4>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Blogr landing page website created with HTML and CSS
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+            </div>
+            <a href="https://holvert-p.github.io/Blogr-landing-page/" target="_blank" class="card__button">See demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card__portfolio">
+        <div class="card">
+          <h4 class="card__title card__title__portfolio">Portfolio</h4>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Web portfolio created with HTML, CSS and JavaScript.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+              <img src="../assets/javascript.svg" alt="javascript">
+            </div>
+            <a href="https://holvert-p.github.io/Portafolio/" target="_blank" class="card__button">See demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card__crud">
+        <div class="card">
+          <h4 class="card__title card__title__portfolio">CRUD Task</h4>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              CRUD Task Web page created with HTML, CSS and php.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+              <img src="../assets/javascript.svg" alt="javascript">
+            </div>
+            <a href="https://holvert-p.github.io/Portafolio/" target="_blank" class="card__button">See demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id="contacto" class="contact">
+    <h2 class="title">Contact</h2>
+    <div class="container__contact">
+      <article class="form__message">
+        <h2 class="message__title">Let´s Talk</h2>
+        <p class="message__description">
+          To request a quote or if you want to meet for a coffee, contact
+          directly with me or fill out the form and I will contact you shortly.
+        </p>
+        <label for="name">Name</label>
+        <input type="text" name="name" class="message__input" id="name" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" class="message__input" required>
+        <label for="message__text">Message</label>
+        <textarea name="message" id="message__text" rows="5" class="message__input"></textarea>
+        <input type="submit" value="Send Message" class="message__button">
+      </article>
+      <article class="form__contact">
+        <img src="../assets/email.svg" alt="send email" class="socialMedia__img">
+        <p><i class="fas fa-map-marker-alt"></i> <span>Rosalinda Nursery 300m west Estelí, Nicaragua</span>
+        </p>
+        <p><i class="fas fa-phone-alt"></i> <span>(+505) 5744 7776</span>
+        </p>
+        <p><i class="fas fa-envelope"></i> <span>perezholvert@gmail.com</span>
+        </p>
+        <div class="form__social">
+          <a id="fb" href="https://www.facebook.com/holvert.perez.1" target="_blank">
+            <img src="../assets/fb.svg" alt="Facebook">
+          </a>
+          <a id="ig" href="https://www.instagram.com/holvertp/?hl=es" target="_blank">
+            <img src="../assets/ig.svg" alt="Instagram">
+          </a>
+          <a id="li" href="https://www.linkedin.com/in/holvert-p%C3%A9rez-043088211/" target="_blank">
+            <img src="../assets/linkedin.svg" alt="Facebook">
+          </a>
+          <a id="wp" href="https://api.whatsapp.com/send?phone=50557447776&text=Hola" target="_blank">
+            <img src="../assets/wp.svg" alt="Facebook">
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <span>designed by Holvert Pérez</span>
+  </footer>
+
+
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

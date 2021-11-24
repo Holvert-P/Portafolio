@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -13,6 +13,7 @@
 
   <script src="https://kit.fontawesome.com/b69d3fa8e3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/lang.css">
   <title>H'Devs || Portafolio</title>
 </head>
 
@@ -42,6 +43,11 @@
         <li class="item__menu"><a href="#portafolio">Portafolio</a></li>
         <li class="item__menu"><a href="#contacto">Contacto</a></li>
       </ul>
+      <div class="rigth">
+        <span id="es">ESP</span>
+        <input type="checkbox" id="check">
+        <span id="en">ING</span>
+      </div>
     </div>
   </nav>
   <header class="home" id="inicio">
@@ -50,7 +56,7 @@
       <h1 class="info__title">Holvert Pérez</h1>
       <h4 class="info__subtitle">Desarrollador Front-end</h4>
       <div class="info__button">
-        <a href="#contacto" class="button__contact">Contacto</a>
+        <a href="#contacto" class="button__contact">Contáctame</a>
       </div>
     </div>
 
@@ -183,7 +189,7 @@
         </p>
         <label for="name">Nombre</label>
         <input type="text" name="name" class="message__input" id="name" required>
-        <label for="email">E-mail</label>
+        <label for="email">Correo</label>
         <input type="email" name="email" id="email" class="message__input" required>
         <label for="message__text">Mensaje</label>
         <textarea name="message" id="message__text" rows="5" class="message__input"></textarea>
