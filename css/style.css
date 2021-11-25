@@ -21,7 +21,6 @@ html {
 }
 body {
   overflow-x: hidden;
-  /* background-color: var(--black-color); */
 }
 * {
   box-sizing: inherit;
@@ -67,7 +66,59 @@ p {
 /* --------------Components--------------------------- */
 
 /* --------------Utilities---------------------------- */
-
+#check-dark {
+  display: none;
+}
+#check-label {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--violet-color);
+  z-index: 100;
+  background-image: url(../assets/moon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  transition: background-image 0.8s ease-in-out;
+}
+.theme {
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--black-color);
+  z-index: -1000;
+  transform: translate(40%, 40%);
+  transition: all 1s linear;
+}
+#check-dark:checked ~ #check-label {
+  background-image: url(../assets/sun.svg);
+}
+#check-dark:checked ~ .theme {
+  height: calc(100vmax * 2);
+  width: calc(100vmax * 2);
+  background-color: var(--black-color);
+}
+#check-dark:checked ~ .about,
+#check-dark:checked ~ .services,
+#check-dark:checked ~ .portfolio,
+#check-dark:checked ~ .footer,
+#check-dark:checked ~ .contact p {
+  color: var(--white-color);
+  transition: color 1s;
+}
+.about,
+.services,
+.portfolio,
+.footer,
+.contact p {
+  transition: color 1s;
+}
 .info__subtitle,
 .info__welcome {
   color: var(--violet-color);

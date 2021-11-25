@@ -1,7 +1,12 @@
 let nav_button = document.getElementById('nav-button');
 let nav_menu = document.querySelector('.nav__menu');
 let check = document.getElementById('check');
+let check_dark = document.getElementById('check-dark');
+let value = localStorage.getItem('check');
 
+if (value === 'true') {
+  check_dark.setAttribute('checked', 'checked');
+}
 nav_button.addEventListener('click', () => {
   nav_menu.classList.toggle('nav__menu--show');
 });
@@ -11,5 +16,5 @@ nav_button.addEventListener('blur', () => {
 }, true);
 
 check.addEventListener('click', () => {
-  check.checked ? location.href = "../en/index.html" : location.href = "../index.html"
+  check.checked ? (location.href = "../en/index.html", localStorage.setItem('check', check_dark.checked)) : (location.href = "../index.html", localStorage.setItem('check', check_dark.checked))
 })
