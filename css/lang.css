@@ -1,9 +1,3 @@
-@media screen and (min-width: 550px) {
-  .rigth {
-    top: 0.9rem;
-    right: -9rem;
-  }
-}
 .rigth {
   position: absolute;
   display: flex;
@@ -11,4 +5,10 @@
   right: 6rem;
   top: 1rem;
   font-size: 0.85rem;
+}
+@media screen and (min-width: 550px) {
+  .rigth {
+    top: 0.9rem;
+    right: -9rem;
+  }
 }
