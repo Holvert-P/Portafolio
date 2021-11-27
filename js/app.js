@@ -12,7 +12,7 @@ nav_button.addEventListener('click', () => {
 });
 
 nav_button.addEventListener('blur', () => {
-  nav_menu.classList.toggle('nav__menu--show');
+  nav_menu.classList.remove('nav__menu--show');
 }, true);
 
 check.addEventListener('click', () => {

@@ -306,6 +306,10 @@ p {
   overflow: hidden;
   top: 0;
   left: 0;
+  background-image: url(../assets/hand.svg);
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .portfolio__card__crud::before,
 .portfolio__card__blogr::before,
@@ -314,7 +318,7 @@ p {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.6) 10%,
@@ -327,11 +331,14 @@ p {
   transition: transform 1s;
   transition: transform 1s;
 }
-.card:hover > h4,
+.card:hover > h3,
 .card:hover > .card__body {
   transform: translateY(0);
   animation: moveTitle 1s ease-in-out;
   animation: createCard 1s ease-in-out;
+}
+.card:hover {
+  background: transparent;
 }
 .card__title__portfolio::before {
   display: block;
@@ -509,7 +516,9 @@ p {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .card {
+    background: transparent;
+  }
   .abilities__card {
     max-width: 20rem;
   }
