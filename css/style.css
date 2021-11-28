@@ -151,7 +151,7 @@ p {
 .nav__menu {
   position: absolute;
   top: 0;
-  right: -250px;
+  right: -15.625rem;
   height: 100vh;
   font-size: 1.5rem;
   background-color: var(--black-color);
@@ -246,6 +246,9 @@ p {
   display: inline;
   background-color: var(--yellow-color);
   padding: 0 0.45rem;
+}
+.info__subtitle {
+  font-size: 1rem;
 }
 .about__info {
   margin-top: 1em;
@@ -456,7 +459,7 @@ p {
   font-size: 0.75rem;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1025px) {
   .nav,
   .home__info,
   .about,
@@ -476,7 +479,6 @@ p {
     position: relative;
     height: auto;
     padding: 0;
-    margin-left: 2.5rem;
   }
 
   .menu {
@@ -545,6 +547,7 @@ p {
     max-width: 25%;
   }
 }
+
 /* --------------KeyFrames-------------------------- */
 @keyframes openBar {
   from {
