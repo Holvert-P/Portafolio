@@ -1,7 +1,6 @@
 /* -------------Custom Properties-------------------- */
 :root {
   --white-color: #fff;
-  --light--white--color: #ffffffe7;
   --black-color: #0d0d0d;
   --yellow-color: #f2d230;
   --dark-yellow-color: #f2c335;
@@ -105,6 +104,13 @@ p {
   width: calc(100vmax * 2);
   background-color: var(--black-color);
 }
+#check-dark:checked ~ .nav {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+#check-dark:checked ~ .nav > .nav__container > .nav__button > svg > path {
+  fill: var(--white-color);
+}
 #check-dark:checked ~ .about,
 #check-dark:checked ~ .services,
 #check-dark:checked ~ .portfolio,
@@ -130,10 +136,11 @@ p {
 .nav {
   position: fixed;
   width: 100vw;
-  background-color: var(--light--white--color);
+  background-color: var(--white-color);
   height: 60px;
   color: var(--black-color);
   z-index: 1000;
+  transition: all 0.2s 1s;
 }
 .nav__container {
   display: flex;
@@ -143,6 +150,7 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: inherit;
+  /* color: inherit; */
 }
 
 .nav__logo {
@@ -154,9 +162,8 @@ p {
   border: none;
 }
 .nav__button > svg > path {
-  fill: inherit;
+  transition: fill 0.2s 1s;
 }
-
 .nav__menu {
   display: flex;
   flex-direction: column;
