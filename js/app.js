@@ -1,4 +1,4 @@
-let nav_button = document.getElementById('nav-button');
+let nav_button = document.getElementById('nav__button');
 let nav_menu = document.querySelector('.nav__menu');
 let check = document.getElementById('check');
 let check_dark = document.getElementById('check-dark');
