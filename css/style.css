@@ -191,7 +191,10 @@ p {
   text-decoration: none;
   height: auto;
 }
-
+.rigth {
+  display: flex;
+  align-items: center;
+}
 #en,
 #es {
   margin: 0 0.25rem;
