@@ -166,7 +166,7 @@ p {
 }
 .nav__menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 1rem;
   position: fixed;
   background-color: inherit;
@@ -176,8 +176,13 @@ p {
   height: 100vh;
   transform: translateX(20rem);
   transition: transform 800ms ease-in-out;
+  justify-content: flex-end;
 }
-
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .nav__menu--show {
   transform: translateX(0rem);
 }
@@ -489,7 +494,9 @@ p {
     justify-content: center;
     align-items: center;
   }
-
+  .menu__list {
+    flex-direction: row;
+  }
   .nav__logo {
     font-size: 2rem;
   }
@@ -501,6 +508,7 @@ p {
     font-size: 1.3rem;
   }
   .rigth {
+    position: unset;
     margin-left: 2rem;
   }
   .info__title {
