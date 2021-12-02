@@ -263,26 +263,54 @@
           To request a quote or if you want to meet for a coffee, contact
           directly with me or fill out the form and I will contact you shortly.
         </p>
-        <label for="name">Name</label>
-        <input type="text"
-               name="name"
-               class="message__input"
-               id="name"
-               required>
-        <label for="email">E-mail</label>
-        <input type="email"
-               name="email"
-               id="email"
-               class="message__input"
-               required>
-        <label for="message__text">Message</label>
-        <textarea name="message"
-                  id="message__text"
-                  rows="5"
-                  class="message__input"></textarea>
-        <input type="submit"
-               value="Send Message"
-               class="message__button">
+        <form class="contact__form">
+          <label for="name">Name</label>
+          <input type="text"
+                 name="name"
+                 class="message__input"
+                 id="name"
+                 required
+                 title="The name field only accepts letters and spaces"
+                 pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+          <span class="message__error">
+            Please enter a valid Name
+          </span>
+          <label for="email">Email</label>
+          <input type="email"
+                 name="email"
+                 id="email"
+                 class="message__input"
+                 title="Enter a valid email"
+                 required
+                 pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+          <span class="message__error">
+            Invalid email address
+          </span>
+          <label for="message__text">Message</label>
+          <textarea name="message"
+                    id="message__text"
+                    rows="5"
+                    class="message__textarea"
+                    title="The message cannot exceed 255 characters."
+                    data-pattern="^.{1,255}$"
+                    required></textarea>
+          <span class="message__error">
+            The message cannot exceed 255 characters.
+          </span>
+          <input type="submit"
+                 value="Send Message"
+                 class="message__button"
+                 id="message__button">
+
+          <div class="message__loader">
+            <img src="./assets/loader.svg"
+                 alt="cargando">
+            <span>Sending...</span>
+          </div>
+          <div class="message__response">
+            <p>The data has been sent.</p>
+          </div>
+        </form>
       </article>
       <article class="form__contact">
         <img src="../assets/email.svg"
