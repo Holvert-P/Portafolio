@@ -207,9 +207,7 @@
             <a href="https://holvert-p.github.io/Blogr-landing-page/"
                target="_blank"
                class="card__button">Ver demo</a>
-            <a href="https://holvert-p.github.io/Blogr-landing-page/"
-               target="_blank"
-               class="card__butto">Ver codigo</a>
+
           </div>
         </div>
       </article>
@@ -268,15 +266,19 @@
           Para solicitar una cotización o si desea quedar para tomar un café, contáctese
           directamente conmigo o complete el formulario y me comunicaré con usted a la brevedad.
         </p>
-        <form action="">
+        <form class="contact__form">
           <label for="name">Nombre</label>
           <input type="text"
                  name="name"
                  class="message__input"
                  id="name"
                  required
-                 title="Ingresar un nombre válido"
-                 pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$">
+                 title="El campo nombre solo acepta letras y espacios"
+                 pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+          <span class="message__error">
+            Ingrese un Nombre
+            válido
+          </span>
           <label for="email">Correo</label>
           <input type="email"
                  name="email"
@@ -285,14 +287,36 @@
                  title="Ingresar un correo válido"
                  required
                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+          <span class="message__error">
+            Dirección de correo
+            inválida
+          </span>
           <label for="message__text">Mensaje</label>
           <textarea name="message"
                     id="message__text"
                     rows="5"
-                    class="message__input"></textarea>
+                    class="message__textarea"
+                    title="El mensaje no debe exceder los 255 caracteres"
+                    data-pattern="^.{1,255}$"
+                    required>
+
+          </textarea>
+          <span class="message__error">
+            El mensaje no puede exceder los 255 caracteres
+          </span>
           <input type="submit"
                  value="Enviar Mensaje"
-                 class="message__button">
+                 class="message__button"
+                 id="message__button">
+
+          <div class="message__loader">
+            <img src="./assets/loader.svg"
+                 alt="cargando">
+            <span>Enviando...</span>
+          </div>
+          <div class="message__response">
+            <p>Los datos han sido enviados.</p>
+          </div>
         </form>
       </article>
       <article class="form__contact">
@@ -344,7 +368,9 @@
   </footer>
 
 
+
   <script src="./js/app.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

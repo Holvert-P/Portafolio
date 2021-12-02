@@ -8,6 +8,8 @@
   --light-blue-color: #91f2e9;
   --grey--color: #d4dbe6;
   --dark-grey-color: #a3a3aa;
+  --green-color: #bae7bb;
+  --red-color: #f44336;
   --font: "Poppins", sans-serif;
 }
 
@@ -100,8 +102,8 @@ p {
   background-image: url(../assets/sun.svg);
 }
 #check-dark:checked ~ .theme {
-  height: calc(100vmax * 2);
-  width: calc(100vmax * 2);
+  height: calc(100vmax * 3);
+  width: calc(100vmax * 3);
   background-color: var(--black-color);
 }
 #check-dark:checked ~ .nav {
@@ -413,11 +415,31 @@ p {
   border-radius: 0.5rem;
 }
 
-.message__title {
-  color: var(--violet-color);
+/* .contact__form [required]:valid ~ .message__button,
+.contact__form [required]:valid > span {
+
+  display: block;
+} */
+
+.contact__form [required]:invalid ~ span {
+  /* display: block; */
 }
+.contact__form [required]:invalid ~ .message__error--show {
+  display: block;
+}
+
+.message__error {
+  color: var(--red-color);
+  font-size: 0.75rem;
+  display: none;
+  margin-left: 1rem;
+}
+
 .message__description {
   padding: 1rem 0;
+}
+.contact__form {
+  position: relative;
 }
 .form__message,
 .form__contact,
@@ -430,7 +452,8 @@ p {
   font-size: 0.85rem;
   color: var(--violet-color);
 }
-.message__input {
+.message__input,
+.message__textarea {
   padding: 0.5rem 1rem;
   border: none;
   background-color: #f4f5fc;
@@ -441,6 +464,7 @@ p {
   resize: none;
   outline: none;
 }
+
 .message__button {
   border: none;
   border-radius: 1rem;
@@ -450,6 +474,31 @@ p {
   font-weight: 700;
   margin-top: 1rem;
   box-shadow: 0rem 0.25rem 1rem rgba(167, 171, 242, 1);
+  transition: opacity 1s ease-in-out;
+}
+.message__loader,
+.message__response {
+  position: absolute;
+  bottom: -2rem;
+  text-align: center;
+  background-color: var(--grey--color);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+.message__loader img {
+  width: 2rem;
+  margin: 0.4rem;
+}
+.message__response {
+  background-color: var(--green-color);
 }
 .form__social {
   text-align: center;
@@ -484,7 +533,11 @@ p {
   color: var(--white-color);
   font-size: 0.75rem;
 }
-
+@media screen and (min-width: 768px) {
+  .container__contact {
+    display: flex;
+  }
+}
 @media screen and (min-width: 1024px) {
   .home__info,
   .about,
