@@ -68,7 +68,7 @@ nav_button.addEventListener('blur', () => {
 }, true);
 
 check.addEventListener('click', () => {
-  check.checked ? (location.href = "https://hdevsportafolio.vercel.app/en/", localStorage.setItem('check', check_dark.checked)) : (location.href = "https://hdevsportafolio.vercel.app/", localStorage.setItem('check', check_dark.checked))
+  check.checked ? (location.href = "../en/", localStorage.setItem('check', check_dark.checked)) : (location.href = "../", localStorage.setItem('check', check_dark.checked))
 });
 
 
