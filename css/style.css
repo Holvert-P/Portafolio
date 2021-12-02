@@ -460,7 +460,7 @@ p {
   border-radius: 1rem;
   margin: 0.25rem 0;
   width: 100%;
-  color: var(--dark-grey-color);
+  color: var(--black-color);
   resize: none;
   outline: none;
 }
