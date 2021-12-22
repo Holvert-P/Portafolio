@@ -376,6 +376,7 @@ p {
 .portfolio,
 .services {
   padding: 1rem;
+  padding-top: 4rem;
   position: relative;
 }
 .title {
