@@ -82,10 +82,13 @@ nav_button.addEventListener(
   true
 );
 
-check_dark.addEventListener("click", () => {
+check.addEventListener("click", () => {
   check.checked
-    ? ((location.href = "../en/"),
-      localStorage.setItem("check", check_dark.checked))
-    : ((location.href = "../"),
-      localStorage.setItem("check", check_dark.checked));
+    ? (location.href = "../en/")
+    : (location.href = "../");
+});
+
+
+check_dark.addEventListener("click", () => {
+      localStorage.setItem("check", check_dark.checked)
 });
