@@ -2,7 +2,7 @@ const nav_button = document.getElementById("nav__button");
 const nav_menu = document.querySelector(".nav__menu");
 const check = document.getElementById("check");
 const check_dark = document.getElementById("check-dark");
-const value = localStorage.getItem("check");
+
 
 const message__input = document.querySelectorAll(".contact__form [required]");
 
@@ -44,16 +44,21 @@ document.addEventListener("submit", (e) => {
       setTimeout(() => {
         message__response.style.opacity = "0";
         message__button.style.opacity = "1";
-      }, 1000)
+      }, 2000)
     })
     .catch(err => {
       console.log(err)
     })
 });
 
+document.addEventListener("DOMContentLoaded",()=>{
+  const value = localStorage.getItem("check");
+  
 if (value === "true") {
   check_dark.setAttribute("checked", "checked");
 }
+});
+
 const $nav = document.querySelector(".hamburger");
 nav_button.addEventListener("click", () => {
   nav_menu.classList.toggle("nav__menu--show");
