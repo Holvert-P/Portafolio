@@ -40,11 +40,11 @@ document.addEventListener("submit", (e) => {
     .then(json => {
       message__loader.style.opacity = "0";
       message__response.style.opacity = "1";
-      form.reset();
+      e.target.reset();
       setTimeout(() => {
         message__response.style.opacity = "0";
         message__button.style.opacity = "1";
-      }, 2000)
+      }, 1000)
     })
     .catch(err => {
       console.log(err)
