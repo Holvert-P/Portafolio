@@ -542,15 +542,6 @@ p {
   border-radius: 0.5rem;
 }
 
-/* .contact__form [required]:valid ~ .message__button,
-.contact__form [required]:valid > span {
-
-  display: block;
-} */
-
-.contact__form [required]:invalid ~ span {
-  /* display: block; */
-}
 .contact__form [required]:invalid ~ .message__error--show {
   display: block;
 }
