@@ -2,7 +2,7 @@ const nav_button = document.getElementById("nav__button");
 const nav_menu = document.querySelector(".nav__menu");
 const check = document.getElementById("check");
 const check_dark = document.getElementById("check-dark");
-const value = localStorage.getItem("check");
+
 
 const message__input = document.querySelectorAll(".contact__form [required]");
 
@@ -16,9 +16,9 @@ message__input.forEach((el) => {
     console.log($input.value);
     if (pattern && $input.value !== "") {
       let reg = new RegExp(pattern);
-      return !reg.exec($input.value)
-        ? el.nextElementSibling.classList.add("message__error--show")
-        : el.nextElementSibling.classList.remove("message__error--show");
+      return !reg.exec($input.value) ?
+        el.nextElementSibling.classList.add("message__error--show") :
+        el.nextElementSibling.classList.remove("message__error--show");
     }
   });
 });
@@ -32,40 +32,33 @@ document.addEventListener("submit", (e) => {
   message__button.style.opacity = "0";
   message__loader.style.opacity = "1";
 
-  setTimeout(() => {
-    message__loader.style.opacity = "0";
-    message__response.style.opacity = "1";
-    sendMail(
-      elements["email"].value,
-      elements["message"].value,
-      elements["name"].value,
-      e.target
-    );
-  }, 1000);
+
+  fetch("https://formsubmit.co/ajax/pereshol13@gmail.com", {
+      method: "POST",
+      body: new FormData(e.target)
+    }).then(res => { res.ok ? res.json() : Promise.reject(res) })
+    .then(json => {
+      message__loader.style.opacity = "0";
+      message__response.style.opacity = "1";
+      e.target.reset();
+      setTimeout(() => {
+        message__response.style.opacity = "0";
+        message__button.style.opacity = "1";
+      }, 2000)
+    })
+    .catch(err => {
+      console.log(err)
+    })
 });
 
-const sendMail = (email, message, name, form) => {
-  Email.send({
-    Host: "smtp.mailtrap.io",
-    Username: "2cacf3ff5d0a55",
-    Password: "5af656d45c8678",
-    To: "pereshol13@gmail.com",
-    From: email,
-    Subject: "Propuesta de trabajo",
-    Body:
-      "<p><strong>Mensaje:</strong></p><br>" +
-      message +
-      "<br><br><p><strong>Nombre:</strong></p>" +
-      name,
-  }).then(() => {
-    message__response.style.opacity = "0";
-    message__button.style.opacity = "1";
-    form.reset();
-  });
-};
+document.addEventListener("DOMContentLoaded",()=>{
+  const value = localStorage.getItem("check");
+  
 if (value === "true") {
   check_dark.setAttribute("checked", "checked");
 }
+});
+
 const $nav = document.querySelector(".hamburger");
 nav_button.addEventListener("click", () => {
   nav_menu.classList.toggle("nav__menu--show");
@@ -83,9 +76,12 @@ nav_button.addEventListener(
 );
 
 check.addEventListener("click", () => {
-  check.checked
-    ? ((location.href = "../en/"),
-      localStorage.setItem("check", check_dark.checked))
-    : ((location.href = "../"),
-      localStorage.setItem("check", check_dark.checked));
+  check.checked ?
+    (location.href = "../en/") :
+    (location.href = "../");
+});
+
+
+check_dark.addEventListener("click", () => {
+  localStorage.setItem("check", check_dark.checked)
 });

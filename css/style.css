@@ -160,12 +160,6 @@ p {
   background-color: transparent;
   border: 0;
 }
-.hamburger:hover {
-  opacity: 0.7;
-}
-.hamburger.is-active:hover {
-  opacity: 0.7;
-}
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
@@ -236,15 +230,15 @@ p {
   left: -80px;
   top: -80px;
   transform: translate3d(80px, 80px, 0) rotate(45deg);
-  transition: left 0.125s ease-out, top 0.05s 0.125s linear,
-    transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.15s ease-out, top 0.05s 0.15s linear,
+    transform 0.15s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .hamburger--emphatic.is-active .hamburger-inner::after {
   right: -80px;
   top: -80px;
   transform: translate3d(-80px, 80px, 0) rotate(-45deg);
-  transition: right 0.125s ease-out, top 0.05s 0.125s linear,
-    transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: right 0.15s ease-out, top 0.05s 0.15s linear,
+    transform 0.15s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .about,
@@ -382,6 +376,7 @@ p {
 .portfolio,
 .services {
   padding: 1rem;
+  padding-top: 4rem;
   position: relative;
 }
 .title {
