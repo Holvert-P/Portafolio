@@ -54,8 +54,8 @@
       </div>
     </div>
   </nav>
-  <header class="home" id="inicio">
-    <div class="home__info">
+  <header class="home" id="inicio spy">
+    <section class="home__info">
       <p class="info__welcome">Hi, I´m</p>
       <span class="info__title">Holvert Perez</span>
       <h1 class="info__subtitle">Front-end Developer
@@ -63,9 +63,9 @@
       <div class="info__button">
         <a href="#contacto" class="button__contact">Contact me</a>
       </div>
-    </div>
+    </section>
   </header>
-  <section id="acerca" class="about">
+  <section id="acerca" class="about spy">
     <h2 class="title">About me</h2>
     <p class="about__info">
       My name is Holvert Pérez I currently reside in Estelí-Nicaragua, graduated from the systems engineering career
@@ -73,7 +73,7 @@
       I like to be self-taught, passionate about web development, open to learning new technologies.
     </p>
   </section>
-  <section id="servicios" class="services">
+  <section id="servicios" class="services spy">
     <h2 class="title">Skills</h2>
     <div class="container__abilities">
       <div class="abilities__card">
@@ -130,10 +130,10 @@
 
     </div>
   </section>
-  <section id="portafolio" class="portfolio">
+  <section id="portafolio" class="portfolio spy">
     <h2 class="title">Portfolio</h2>
     <div class="container__portfolio">
-      <article class="portfolio__card__blogr">
+      <article class="portfolio__card__blogr portfolio__card__item">
         <div class="card">
           <h3 class="card__title card__title__portfolio">Blogr</h3>
           <div class="card__body">
@@ -147,12 +147,10 @@
               <a href="https://holvert-p.github.io/Blogr-landing-page/" target="_blank" class="card__button">Demo</a>
               <a href="https://github.com/Holvert-P/Blogr-landing-page" target="_blank" class="card__button">Code</a>
             </div>
-
-
           </div>
         </div>
       </article>
-      <article class="portfolio__card__portfolio">
+      <article class="portfolio__card__portfolio portfolio__card__item">
         <div class="card">
           <h3 class="card__title card__title__portfolio">Portfolio</h3>
           <div class="card__body">
@@ -169,12 +167,10 @@
               <a href="https://holvert-p.github.io/Portafolio/" target="_blank" class="card__button">Demo</a>
               <a href="https://github.com/Holvert-P/Portafolio" target="_blank" class="card__button">Code</a>
             </div>
-
-
           </div>
         </div>
       </article>
-      <article class="portfolio__card__crud">
+      <article class="portfolio__card__crud portfolio__card__item">
         <div class="card">
           <h3 class="card__title card__title__portfolio">CRUD Task</h3>
           <div class="card__body">
@@ -191,12 +187,11 @@
               <a href="https://crudtaskbyhdev.000webhostapp.com/" target="_blank" class="card__button">Demo</a>
               <a href="https://github.com/Holvert-P/CRUD-TASK" target="_blank" class="card__button">Code</a>
             </div>
-
           </div>
         </div>
-    </div>
+
     </article>
-    <article class="portfolio__card__pokedex">
+    <article class="portfolio__card__pokedex portfolio__card__item">
       <div class="card">
         <h3 class="card__title card__title__portfolio">Pokedex</h3>
         <div class="card__body">
@@ -215,9 +210,28 @@
         </div>
       </div>
     </article>
+    <article class="portfolio__card__shoppingCard portfolio__card__item">
+      <div class="card">
+        <h3 class="card__title card__title__portfolio">Shopping cart </h3>
+        <div class="card__body">
+          <p class="card__info card__info--portfolio">
+          Built with React JS, state handling with useReducers.
+          </p>
+          <div class="card__tecno">
+            <img src="../assets/html.svg" alt="html">
+            <img src="../assets/css.svg" alt="css">
+            <img src="../assets/react.svg" alt="React JS">
+          </div>
+          <div class="card__container__button">
+            <a href="https://cartshopping.vercel.app/" target="_blank" class="card__button">Demo</a>
+            <a href="https://github.com/Holvert-P/Carrito-de-compras" target="_blank" class="card__button">Code</a>
+          </div>
+        </div>
+      </div>
+    </article>
     </div>
   </section>
-  <section id="contacto" class="contact">
+  <section id="contacto" class="contact spy">
     <h2 class="title">Contact</h2>
     <div class="container__contact">
       <article class="form__message">
@@ -248,7 +262,7 @@
           <input type="submit" value="Send Message" class="message__button" id="message__button">
 
           <div class="message__loader">
-            <img src="./assets/loader.svg" alt="cargando">
+            <img src="../assets/loader.svg" alt="cargando">
             <span>Sending...</span>
           </div>
           <div class="message__response">

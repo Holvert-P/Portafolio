@@ -422,10 +422,7 @@ p {
   margin-left: 1rem;
 }
 
-.portfolio__card__blogr,
-.portfolio__card__portfolio,
-.portfolio__card__crud,
-.portfolio__card__pokedex {
+.portfolio__card__item {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -433,6 +430,7 @@ p {
   color: var(--white-color);
   margin: 1rem;
   border-radius: 0.25rem;
+  overflow: hidden;
 }
 .portfolio__card__blogr {
   background-image: url(../assets/blogr.png);
@@ -445,6 +443,9 @@ p {
 }
 .portfolio__card__pokedex {
   background-image: url(../assets/pokedex.png);
+}
+.portfolio__card__shoppingCard {
+  background-image: url(../assets/shoppingCart.png);
 }
 .card {
   position: relative;
@@ -462,7 +463,8 @@ p {
 .portfolio__card__crud::before,
 .portfolio__card__blogr::before,
 .portfolio__card__portfolio::before,
-.portfolio__card__pokedex::before {
+.portfolio__card__pokedex::before,
+.portfolio__card__shoppingCard::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -736,10 +738,7 @@ p {
     padding: 0.5rem;
     font-size: 1rem;
   }
-  .portfolio__card__blogr,
-  .portfolio__card__crud,
-  .portfolio__card__portfolio,
-  .portfolio__card__pokedex {
+  .portfolio__card__item {
     max-width: 25%;
   }
 }
@@ -767,6 +766,10 @@ p {
   }
 }
 
+.isActive {
+  color: var(--yellow-color);
+  opacity: 0.8;
+}
 @keyframes createLine {
   0% {
     width: 0%;

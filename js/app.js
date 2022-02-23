@@ -3,7 +3,6 @@ const nav_menu = document.querySelector(".nav__menu");
 const check = document.getElementById("check");
 const check_dark = document.getElementById("check-dark");
 
-
 const message__input = document.querySelectorAll(".contact__form [required]");
 
 message__input.forEach((el) => {
@@ -16,9 +15,9 @@ message__input.forEach((el) => {
     console.log($input.value);
     if (pattern && $input.value !== "") {
       let reg = new RegExp(pattern);
-      return !reg.exec($input.value) ?
-        el.nextElementSibling.classList.add("message__error--show") :
-        el.nextElementSibling.classList.remove("message__error--show");
+      return !reg.exec($input.value)
+        ? el.nextElementSibling.classList.add("message__error--show")
+        : el.nextElementSibling.classList.remove("message__error--show");
     }
   });
 });
@@ -32,31 +31,35 @@ document.addEventListener("submit", (e) => {
   message__button.style.opacity = "0";
   message__loader.style.opacity = "1";
 
-
   fetch("https://formsubmit.co/ajax/pereshol13@gmail.com", {
-      method: "POST",
-      body: new FormData(e.target)
-    }).then(res => { res.ok ? res.json() : Promise.reject(res) })
-    .then(json => {
+    method: "POST",
+    body: new FormData(e.target),
+  })
+    .then((res) => {
+      res.ok ? res.json() : Promise.reject(res);
+    })
+    .then((json) => {
       message__loader.style.opacity = "0";
       message__response.style.opacity = "1";
       e.target.reset();
       setTimeout(() => {
         message__response.style.opacity = "0";
         message__button.style.opacity = "1";
-      }, 2000)
+      }, 2000);
     })
-    .catch(err => {
-      console.log(err)
-    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
   const value = localStorage.getItem("check");
-  
-if (value === "true") {
-  check_dark.setAttribute("checked", "checked");
-}
+
+  if (value === "true") {
+    check_dark.setAttribute("checked", "checked");
+  }
+
+  scrollSpy();
 });
 
 const $nav = document.querySelector(".hamburger");
@@ -76,12 +79,32 @@ nav_button.addEventListener(
 );
 
 check.addEventListener("click", () => {
-  check.checked ?
-    (location.href = "../en/") :
-    (location.href = "../");
+  check.checked ? (location.href = "../en/") : (location.href = "../");
 });
-
 
 check_dark.addEventListener("click", () => {
-  localStorage.setItem("check", check_dark.checked)
+  localStorage.setItem("check", check_dark.checked);
 });
+
+function scrollSpy() {
+  const $sections = document.querySelectorAll(".spy");
+
+  const cb = (entries) => {
+    console.log(entries);
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document
+          .querySelector(`a[href="#${entry.target.id}"]`)
+          .classList.add("isActive");
+      } else {
+        document
+          .querySelector(`a[href="#${entry.target.id}"]`)
+          .classList.remove("isActive");
+      }
+    });
+  };
+  const observer = new IntersectionObserver(cb, {
+    threshold: [0.4, 0.6],
+  });
+  $sections.forEach((el) => observer.observe(el));
+}
