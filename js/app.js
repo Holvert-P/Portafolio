@@ -88,10 +88,18 @@ check_dark.addEventListener("click", () => {
 
 function scrollSpy() {
   const $sections = document.querySelectorAll(".spy");
-
+  const options = {
+    threshold: 0.22,
+  };
   const cb = (entries) => {
-    console.log(entries);
     entries.forEach((entry) => {
+      // if (entry.target.id === "inicio") {
+      //   console.log("se hizo");
+      //   options.threshold = 0.6;
+      // } else {
+      //   options.threshold = 0.45;
+      // }
+
       if (entry.isIntersecting) {
         document
           .querySelector(`a[href="#${entry.target.id}"]`)
@@ -103,8 +111,13 @@ function scrollSpy() {
       }
     });
   };
-  const observer = new IntersectionObserver(cb, {
-    threshold: [0.4, 0.6],
+  const observer = new IntersectionObserver(cb, options);
+  $sections.forEach((el) => {
+    if (el.id === "portafolio") {
+      options.threshold = 0.1;
+    } else {
+      options.threshold = 0.6;
+    }
+    observer.observe(el);
   });
-  $sections.forEach((el) => observer.observe(el));
 }
