@@ -450,6 +450,9 @@ p {
 .portfolio__card__weatherApp {
   background-image: url(../assets/weatherApp.png);
 }
+.portfolio__card__crudLibrary {
+  background-image: url(../assets/crudLibrary.PNG);
+}
 .card {
   position: relative;
   padding: 1rem 2rem;
@@ -463,11 +466,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-.portfolio__card__crud::before,
-.portfolio__card__blogr::before,
-.portfolio__card__portfolio::before,
-.portfolio__card__pokedex::before,
-.portfolio__card__shoppingCard::before {
+.portfolio__card__item::before {
   content: "";
   position: absolute;
   height: 100%;
