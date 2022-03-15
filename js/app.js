@@ -2,7 +2,7 @@ const nav_button = document.getElementById("nav__button");
 const nav_menu = document.querySelector(".nav__menu");
 const check = document.getElementById("check");
 const check_dark = document.getElementById("check-dark");
-
+const btn_up = document.querySelector(".btn-up");
 const message__input = document.querySelectorAll(".contact__form [required]");
 
 message__input.forEach((el) => {
@@ -93,13 +93,6 @@ function scrollSpy() {
   };
   const cb = (entries) => {
     entries.forEach((entry) => {
-      // if (entry.target.id === "inicio") {
-      //   console.log("se hizo");
-      //   options.threshold = 0.6;
-      // } else {
-      //   options.threshold = 0.45;
-      // }
-
       if (entry.isIntersecting) {
         document
           .querySelector(`a[href="#${entry.target.id}"]`)
@@ -112,12 +105,20 @@ function scrollSpy() {
     });
   };
   const observer = new IntersectionObserver(cb, options);
-  $sections.forEach((el) => {
-    if (el.id === "portafolio") {
-      options.threshold = 0.1;
-    } else {
-      options.threshold = 0.6;
-    }
-    observer.observe(el);
-  });
+  $sections.forEach((el) => observer.observe(el));
 }
+
+const scrolling = () => {
+  if (window.scrollY > 200) {
+    btn_up.style.display = "flex";
+  } else {
+    btn_up.style.display = "none";
+  }
+};
+
+document.addEventListener("scroll", () => scrolling());
+document.addEventListener("click", (e) => {
+  if (e.target.matches(".btn-up *")) {
+    window.scrollTo(0, 0);
+  }
+});
