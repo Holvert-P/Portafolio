@@ -2,388 +2,396 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Junior Front-End Developer || Passionate about web development, learning new technologies that allow me to develop friendly, responsive.">
-    <meta proporty="og:type" contente="website">
-    <meta name="application-name" content="H'Dev || Front-End Developer">
+  <meta name="description"
+    content="Junior Front-End Developer || Passionate about web development, learning new technologies that allow me to develop friendly, responsive.">
+  <meta proporty="og:type" contente="website">
+  <meta name="application-name" content="H'Dev || Front-End Developer">
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.svg">
-    <link href="../favicon.ico" rel="apple-touch-icon">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.svg">
+  <link href="../favicon.ico" rel="apple-touch-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/b69d3fa8e3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
-    <title>H'Dev || Front-End Web Developer</title>
+  <script src="https://kit.fontawesome.com/b69d3fa8e3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <title>H'Dev || Front-End Web Developer</title>
 </head>
 
 <body>
-    <input type="checkbox" id="check-dark">
-    <label for="check-dark" id="check-label"></label>
-    <span class="theme"></span>
-    <nav class="nav">
-        <div class="nav__container">
-            <a href="./index.html" class="nav__logo">H'Dev</a>
-            <button class="nav__button hamburger hamburger--emphatic js-hamburger" type="button" id="nav__button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
+  <input type="checkbox" id="check-dark">
+  <label for="check-dark" id="check-label"></label>
+  <span class="theme"></span>
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="./index.html" class="nav__logo">H'Dev</a>
+      <button class="nav__button hamburger hamburger--emphatic js-hamburger" type="button" id="nav__button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-            <div class="nav__menu">
-                <div class="menu__list">
-                    <a href="#inicio" class="nav__item">Home</a>
-                    <a href="#acerca" class="nav__item">About me</a>
-                    <a href="#servicios" class="nav__item">Skills</a>
-                    <a href="#portafolio" class="nav__item">Portfolio</a>
-                    <a href="#contacto" class="nav__item">Contact</a>
-                </div>
-                <div class="rigth">
-                    <span id="es">SPA</span>
-                    <input type="checkbox" id="check" checked>
-                    <span id="en">ENG</span>
-                </div>
-            </div>
+      <div class="nav__menu">
+        <div class="menu__list">
+          <a href="#inicio" class="nav__item">Home</a>
+          <a href="#acerca" class="nav__item">About me</a>
+          <a href="#servicios" class="nav__item">Skills</a>
+          <a href="#portafolio" class="nav__item">Portfolio</a>
+          <a href="#contacto" class="nav__item">Contact</a>
         </div>
-    </nav>
-    <header class="home spy" id="inicio">
-        <section class="home__info">
-            <p class="info__welcome">Hi, I´m</p>
-            <span class="info__title">Holvert Perez</span>
-            <h1 class="info__subtitle">Front-end Developer
-            </h1>
-            <div class="info__button">
-                <a href="#contacto" class="button__contact">Contact me</a>
-            </div>
-        </section>
-    </header>
-    <section id="acerca" class="about spy">
-        <h2 class="title">About me</h2>
-        <article class="about-container">
-            <figure><img src="../assets/me.png" alt="Holvert Perez"></figure>
-            <div class="about__info">
-                <p>
-                    Hello, my name is Holvert. I graduated with an information systems engineering career, passionate
-                    about learning new
-                    technologies.
-                </p>
-                <p>
-                    With experience in designing web pages through semantic HTML and responsive design, also add
-                    interactivity between
-                    the
-                    user and the web page.
-                </p>
-                <p>
-                    I have studied a few relational databases (MySQL). I also developed a school project that consisted
-                    of a CRUD using
-                    PHP
-                    with its Laravel 8 framework.
-                </p>
-                <p>
-                    I am also in continuous learning front-end development using React JS, where I created a few small
-                    projects like a
-                    test.
-                    I also did a bit of back-end with NodeJS, where I developed a small REST API with MongoDB
-                    connection.
-                </p>
-            </div>
-        </article>
-        <button class="btn-download"> <a href="../assets/CV.pdf" target="_blank" download>Download CV</a></button>
-    </section>
-    <section id="servicios" class="services spy">
-        <h2 class="title">Skills</h2>
-        <div class="container__abilities">
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/html.svg" alt="html">
-                <h3 class="card__title">Hyper Text Markup Language (HTML)</h3>
-                <p class="card__info">
-                    I have 1 year of experience using semantic HTML.
-                </p>
-            </div>
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/css.svg" alt="css">
-                <h3 class="card__title">Cascading Style Sheets (CSS)</h3>
-                <p class="card__info">
-                    I have 1 year of experience using CSS with the BEM CSS naming methodology.
-                </p>
-            </div>
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/javascript.svg" alt="javascript">
-                <h3 class="card__title">JavaScript (JS)</h3>
-                <p class="card__info">
-                    I have 6 months of experience using JavaScript for DOM manipulation and API connections.
-                </p>
-            </div>
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/react.svg" alt="react js">
-                <h3 class="card__title">React JS</h3>
-                <p class="card__info">
-                    I currently have a month learning React JS, getting the basics of this library of
-                    JavaScript.
-                </p>
-            </div>
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/laravel.svg" alt="laravel">
-                <h3 class="card__title">Laravel</h3>
-                <p class="card__info">
-                    I used Laravel to create a university project which lasted 3 months where I could apply the
-                    MVC methodology (model-view-controller), in this project I also learned a little about Laravel
-                    Jetstreem.
-                </p>
-            </div>
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/php.svg" alt="php">
-                <h3 class="card__title">PHP</h3>
-                <p class="card__info">
-                    Like Laravel I have 3 months of experience using PHP for database connections with MySQL.
-                </p>
-            </div>
-            <div class="abilities__card">
-                <img class="card__img" src="../assets/mysql.svg" alt="mysql">
-                <h3 class="card__title">MySQL</h3>
-                <p class="card__info">
-                    I have been using MySQL for about 1 year, during this time I have learned to query, insert, update
-                    and delete data
-                    through queries or stored procedures.
-                </p>
-            </div>
-
+        <div class="rigth">
+          <span id="es">SPA</span>
+          <input type="checkbox" id="check" checked>
+          <span id="en">ENG</span>
         </div>
+      </div>
+    </div>
+  </nav>
+  <header class="home spy" id="inicio">
+    <section class="home__info">
+      <p class="info__welcome">Hi, I´m</p>
+      <span class="info__title">Holvert Perez</span>
+      <h1 class="info__subtitle">Front-end Developer
+      </h1>
+      <div class="info__button">
+        <a href="#contacto" class="button__contact">Contact me</a>
+      </div>
     </section>
-    <section id="portafolio" class="portfolio spy">
-        <h2 class="title">Portfolio</h2>
-        <div class="container__portfolio">
-            <article class="portfolio__card__blogr portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">Blogr</h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            Blogr landing page website created with HTML and CSS
-                        <div class="card__tecno">
-                            <img src="../assets/html.svg" alt="html">
-                            <img src="../assets/css.svg" alt="css">
-                        </div>
-                        <div class="card__container__button">
-                            <a href="https://holvert-p.github.io/Blogr-landing-page/" target="_blank"
-                                class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/Blogr-landing-page" target="_blank"
-                                class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="portfolio__card__portfolio portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">Portfolio</h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            Web portfolio created with HTML, CSS and JavaScript.
-                        </p>
-                        <div class="card__tecno">
-                            <img src="../assets/html.svg" alt="html">
-                            <img src="../assets/css.svg" alt="css">
-                            <img src="../assets/javascript.svg" alt="javascript">
-                        </div>
+  </header>
+  <section id="acerca" class="about spy">
+    <h2 class="title">About me</h2>
+    <article class="about-container">
+      <figure><img src="../assets/me.png" alt="Holvert Perez"></figure>
+      <div class="about__info">
+        <p>
+          Hello, my name is Holvert. I graduated with an information systems engineering career, passionate
+          about learning new
+          technologies.
+        </p>
+        <p>
+          With experience in designing web pages through semantic HTML and responsive design, also add
+          interactivity between
+          the
+          user and the web page.
+        </p>
+        <p>
+          I have studied a few relational databases (MySQL). I also developed a school project that consisted
+          of a CRUD using
+          PHP
+          with its Laravel 8 framework.
+        </p>
+        <p>
+          I am also in continuous learning front-end development using React JS, where I created a few small
+          projects like a
+          test.
+          I also did a bit of back-end with NodeJS, where I developed a small REST API with MongoDB
+          connection.
+        </p>
+      </div>
+    </article>
+    <button class="btn-download"> <a href="../assets/CV.pdf" target="_blank" download>Download CV</a></button>
+  </section>
+  <section id="servicios" class="services spy">
+    <h2 class="title">Skills</h2>
+    <div class="container__abilities">
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/html.svg" alt="html">
+        <h3 class="card__title">Hyper Text Markup Language (HTML)</h3>
+        <p class="card__info">
+          I have 1 year of experience using semantic HTML.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/css.svg" alt="css">
+        <h3 class="card__title">Cascading Style Sheets (CSS)</h3>
+        <p class="card__info">
+          I have 1 year of experience using CSS with the BEM CSS naming methodology.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/javascript.svg" alt="javascript">
+        <h3 class="card__title">JavaScript (JS)</h3>
+        <p class="card__info">
+          I have 6 months of experience using JavaScript for DOM manipulation and API connections.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/react.svg" alt="react js">
+        <h3 class="card__title">React JS</h3>
+        <p class="card__info">
+          I currently have a month learning React JS, getting the basics of this library of
+          JavaScript.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/laravel.svg" alt="laravel">
+        <h3 class="card__title">Laravel</h3>
+        <p class="card__info">
+          I used Laravel to create a university project which lasted 3 months where I could apply the
+          MVC methodology (model-view-controller), in this project I also learned a little about Laravel
+          Jetstreem.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/php.svg" alt="php">
+        <h3 class="card__title">PHP</h3>
+        <p class="card__info">
+          Like Laravel I have 3 months of experience using PHP for database connections with MySQL.
+        </p>
+      </div>
+      <div class="abilities__card">
+        <img class="card__img" src="../assets/mysql.svg" alt="mysql">
+        <h3 class="card__title">MySQL</h3>
+        <p class="card__info">
+          I have been using MySQL for about 1 year, during this time I have learned to query, insert, update
+          and delete data
+          through queries or stored procedures.
+        </p>
+      </div>
 
-                        <div class="card__container__button">
-                            <a href="https://holvert-p.github.io/Portafolio/" target="_blank"
-                                class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/Portafolio" target="_blank"
-                                class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="portfolio__card__crud portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">CRUD Task</h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            CRUD Task Web page created with HTML, CSS and php.
-                        </p>
-                        <div class="card__tecno">
-                            <img src="../assets/php.svg" alt="PHP">
-                            <img src="../assets/mysql.svg" alt="MySQL">
-                            <img src="../assets/javascript.svg" alt="javascript">
-                        </div>
-
-                        <div class="card__container__button">
-                            <a href="https://crudtaskbyhdev.000webhostapp.com/" target="_blank"
-                                class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/CRUD-TASK" target="_blank"
-                                class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="portfolio__card__pokedex portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">Pokedex</h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            Pokedex created with HTML, CSS and JS, using Pokeapi v2.
-                        </p>
-                        <div class="card__tecno">
-                            <img src="../assets/html.svg" alt="html">
-                            <img src="../assets/css.svg" alt="css">
-                            <img src="../assets/javascript.svg" alt="javascript">
-                        </div>
-                        <div class="card__container__button">
-                            <a href="https://pokedex-holvert-p.vercel.app/" target="_blank"
-                                class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/Pokedex" target="_blank" class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="portfolio__card__shoppingCard portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">Shopping cart </h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            Built with React JS, state handling with useReducers.
-                        </p>
-                        <div class="card__tecno">
-                            <img src="../assets/html.svg" alt="html">
-                            <img src="../assets/css.svg" alt="css">
-                            <img src="../assets/react.svg" alt="React JS">
-                        </div>
-                        <div class="card__container__button">
-                            <a href="https://cartshopping.vercel.app/" target="_blank" class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/Carrito-de-compras" target="_blank"
-                                class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="portfolio__card__weatherApp portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">Weather App</h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            Weather app built with React JS and OpenWeatherMap API.
-                        </p>
-                        <div class="card__tecno">
-                            <img src="../assets/html.svg" alt="html">
-                            <img src="../assets/css.svg" alt="css">
-                            <img src="../assets/react.svg" alt="React JS">
-                        </div>
-                        <div class="card__container__button">
-                            <a href="https://hdevweatherapp.vercel.app/" target="_blank" class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/Wheater-App" target="_blank"
-                                class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="portfolio__card__crudLibrary portfolio__card__item">
-                <div class="card">
-                    <h3 class="card__title card__title__portfolio">Library</h3>
-                    <div class="card__body">
-                        <p class="card__info card__info--portfolio">
-                            REST API with Node JS, database with MongoDB and React JS.
-                        </p>
-                        <div class="card__tecno">
-                            <img src="../assets/nodeJS.svg" alt="Node JS">
-                            <img src="../assets/mongodb.svg" alt="MongoDB">
-                            <img src="../assets/react.svg" alt="React JS">
-                        </div>
-                        <div class="card__container__button">
-                            <a href="https://bookscrud.vercel.app/" target="_blank" class="card__button">Demo</a>
-                            <a href="https://github.com/Holvert-P/BooksCRUD" target="_blank"
-                                class="card__button">Code</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
+    </div>
+  </section>
+  <section id="portafolio" class="portfolio spy">
+    <h2 class="title">Portfolio</h2>
+    <div class="container__portfolio">
+      <article class="portfolio__card__blogr portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Blogr</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Blogr landing page website created with HTML and CSS
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+            </div>
+            <div class="card__container__button">
+              <a href="https://holvert-p.github.io/Blogr-landing-page/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/Blogr-landing-page" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="contacto" class="contact spy">
-        <h2 class="title">Contact</h2>
-        <div class="container__contact">
-            <article class="form__message">
-                <h3 class="message__title">Let´s Talk</h3>
-                <p class="message__description">
-                    To request a quote or if you want to meet for a coffee, contact
-                    directly with me or fill out the form and I will contact you shortly.
-                </p>
-                <form class="contact__form">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" class="message__input" id="name" required
-                        title="The name field only accepts letters and spaces" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
-                    <span class="message__error">
-                        Please enter a valid Name
-                    </span>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="message__input" title="Enter a valid email"
-                        required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
-                    <span class="message__error">
-                        Invalid email address
-                    </span>
-                    <label for="message__text">Message</label>
-                    <textarea name="message" id="message__text" rows="5" class="message__textarea"
-                        title="The message cannot exceed 255 characters." data-pattern="^.{1,255}$" required></textarea>
-                    <span class="message__error">
-                        The message cannot exceed 255 characters.
-                    </span>
-                    <input type="submit" value="Send Message" class="message__button" id="message__button">
+      </article>
+      <article class="portfolio__card__portfolio portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Portfolio</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Web portfolio created with HTML, CSS and JavaScript.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+              <img src="../assets/javascript.svg" alt="javascript">
+            </div>
 
-                    <div class="message__loader">
-                        <img src="../assets/loader.svg" alt="cargando">
-                        <span>Sending...</span>
-                    </div>
-                    <div class="message__response">
-                        <p>The data has been sent.</p>
-                    </div>
-                </form>
-            </article>
-            <article class="form__contact">
-                <img src="../assets/email.svg" alt="send email" class="socialMedia__img">
-                <p><i class="fas fa-map-marker-alt"></i> <span>Rosalinda Nursery 300m west Estelí, Nicaragua</span>
-                </p>
-                <p><i class="fas fa-phone-alt"></i> <span>(+505) 5744 7776</span>
-                </p>
-                <p><i class="fas fa-envelope"></i> <span>perezholvert@gmail.com</span>
-                </p>
-                <div class="form__social">
-                    <a id="fb" href="https://www.facebook.com/holvert.perez.1" target="_blank">
-                        <img src="../assets/fb.svg" alt="Facebook" title="Facebook">
-                    </a>
-                    <a id="ig" href="https://www.instagram.com/holvertp/?hl=es" target="_blank">
-                        <img src="../assets/ig.svg" alt="Instagram" title="Instagram">
-                    </a>
-                    <a id="li" href="https://www.linkedin.com/in/holvert-p%C3%A9rez-043088211/" target="_blank">
-                        <img src="../assets/linkedin.svg" alt="LinkedIn" title="LinkedIn">
-                    </a>
-                    <a id="wp" href="https://api.whatsapp.com/send?phone=50557447776&text=Hola" target="_blank">
-                        <img src="../assets/wp.svg" alt="whatsapp" title="Whatsapp">
-                    </a>
-                    </a>
-                </div>
-            </article>
-
+            <div class="card__container__button">
+              <a href="https://holvert-p.github.io/Portafolio/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/Portafolio" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
         </div>
-    </section>
-    <footer class="footer">
-        <span>Copyright © 2022 - All rights reserved</span>
-        <small>Designed by Holvert Pérez</small>
-    </footer>
+      </article>
+      <article class="portfolio__card__crud portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">CRUD Task</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              CRUD Task Web page created with HTML, CSS and php.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/php.svg" alt="PHP">
+              <img src="../assets/mysql.svg" alt="MySQL">
+              <img src="../assets/javascript.svg" alt="javascript">
+            </div>
 
-    <span class="btn-up"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-            fill="#fff">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
-        </svg></span>
-    <script src="../js/app.js"></script>
+            <div class="card__container__button">
+              <a href="https://crudtaskbyhdev.000webhostapp.com/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/CRUD-TASK" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
+        </div>
+
+      </article>
+      <article class="portfolio__card__pokedex portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Pokedex</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Pokedex created with HTML, CSS and JS, using Pokeapi v2.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+              <img src="../assets/javascript.svg" alt="javascript">
+            </div>
+            <div class="card__container__button">
+              <a href="https://pokedex-holvert-p.vercel.app/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/Pokedex" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card__shoppingCard portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Shopping cart </h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Built with React JS, state handling with useReducers.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+              <img src="../assets/react.svg" alt="React JS">
+            </div>
+            <div class="card__container__button">
+              <a href="https://cartshopping.vercel.app/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/Carrito-de-compras" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card__weatherApp portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Weather App</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Weather app built with React JS and OpenWeatherMap API.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/html.svg" alt="html">
+              <img src="../assets/css.svg" alt="css">
+              <img src="../assets/react.svg" alt="React JS">
+            </div>
+            <div class="card__container__button">
+              <a href="https://hdevweatherapp.vercel.app/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/Wheater-App" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card__crudLibrary portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Library</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              REST API with Node JS, database with MongoDB and React JS.
+            </p>
+            <div class="card__tecno">
+              <img src="../assets/nodeJS.svg" alt="Node JS">
+              <img src="../assets/mongodb.svg" alt="MongoDB">
+              <img src="../assets/react.svg" alt="React JS">
+            </div>
+            <div class="card__container__button">
+              <a href="https://bookscrud.vercel.app/" target="_blank" class="card__button">Demo</a>
+              <a href="https://github.com/Holvert-P/BooksCRUD" target="_blank" class="card__button">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__card__devtwer portfolio__card__item">
+        <div class="card">
+          <h3 class="card__title card__title__portfolio">Devtwer</h3>
+          <div class="card__body">
+            <p class="card__info card__info--portfolio">
+              Devtwer is a web app built with Next JS and Firebase.
+            <div class="card__tecno">
+              <img src="../assets/next.svg" alt="Next js">
+              <img src="../assets/firebase.svg" alt="Firebase">
+            </div>
+            <div class="card__container__button">
+              <a href="https://devtwer.vercel.app" target="_blank" class="card__button">Demo</a>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section id="contacto" class="contact spy">
+    <h2 class="title">Contact</h2>
+    <div class="container__contact">
+      <article class="form__message">
+        <h3 class="message__title">Let´s Talk</h3>
+        <p class="message__description">
+          To request a quote or if you want to meet for a coffee, contact
+          directly with me or fill out the form and I will contact you shortly.
+        </p>
+        <form class="contact__form">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="message__input" id="name" required
+            title="The name field only accepts letters and spaces" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+          <span class="message__error">
+            Please enter a valid Name
+          </span>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="message__input" title="Enter a valid email" required
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+          <span class="message__error">
+            Invalid email address
+          </span>
+          <label for="message__text">Message</label>
+          <textarea name="message" id="message__text" rows="5" class="message__textarea"
+            title="The message cannot exceed 255 characters." data-pattern="^.{1,255}$" required></textarea>
+          <span class="message__error">
+            The message cannot exceed 255 characters.
+          </span>
+          <input type="submit" value="Send Message" class="message__button" id="message__button">
+
+          <div class="message__loader">
+            <img src="../assets/loader.svg" alt="cargando">
+            <span>Sending...</span>
+          </div>
+          <div class="message__response">
+            <p>The data has been sent.</p>
+          </div>
+        </form>
+      </article>
+      <article class="form__contact">
+        <img src="../assets/email.svg" alt="send email" class="socialMedia__img">
+        <p><i class="fas fa-map-marker-alt"></i> <span>Rosalinda Nursery 300m west Estelí, Nicaragua</span>
+        </p>
+        <p><i class="fas fa-phone-alt"></i> <span>(+505) 5744 7776</span>
+        </p>
+        <p><i class="fas fa-envelope"></i> <span>perezholvert@gmail.com</span>
+        </p>
+        <div class="form__social">
+          <a id="fb" href="https://www.facebook.com/holvert.perez.1" target="_blank">
+            <img src="../assets/fb.svg" alt="Facebook" title="Facebook">
+          </a>
+          <a id="ig" href="https://www.instagram.com/holvertp/?hl=es" target="_blank">
+            <img src="../assets/ig.svg" alt="Instagram" title="Instagram">
+          </a>
+          <a id="li" href="https://www.linkedin.com/in/holvert-p%C3%A9rez-043088211/" target="_blank">
+            <img src="../assets/linkedin.svg" alt="LinkedIn" title="LinkedIn">
+          </a>
+          <a id="wp" href="https://api.whatsapp.com/send?phone=50557447776&text=Hola" target="_blank">
+            <img src="../assets/wp.svg" alt="whatsapp" title="Whatsapp">
+          </a>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <span>Copyright © 2022 - All rights reserved</span>
+    <small>Designed by Holvert Pérez</small>
+  </footer>
+
+  <span class="btn-up"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+      fill="#fff">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+    </svg></span>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>

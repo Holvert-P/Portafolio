@@ -530,6 +530,9 @@ h2.title {
 .portfolio__card__crudLibrary {
   background-image: url(../assets/crudLibrary.PNG);
 }
+.portfolio__card__devtwer {
+  background-image: url(../assets/devtwer.png);
+}
 .card {
   position: relative;
   padding: 1rem 2rem;
